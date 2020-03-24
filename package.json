@@ -1,0 +1,17 @@
+{
+  "name": "repos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:wommy/repos.git",
+  "author": "wommy <tom@technomad.media>",
+  "license": "MIT",
+  "scripts": {
+    "tailwind:build": "tailwindcss build __assets/style/tailwind-pre.css -o __assets/style/tailwind.css"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
