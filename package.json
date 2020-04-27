@@ -6,9 +6,13 @@
   "author": "wommy <tom@technomad.media>",
   "license": "MIT",
   "scripts": {
-    "tailwind:build": "tailwindcss build __assets/style/tailwind-pre.css -o __assets/style/tailwind.css"
+    "tailwind:build": "postcss __assets/style/tailwind-pre.css -o __assets/style/tailwind.css",
+    "tailwind:watch": "postcss __assets/style/tailwind-pre.css -o __assets/style/tailwind.css --watch"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.5",
+    "postcss-cli": "^7.1.0",
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
