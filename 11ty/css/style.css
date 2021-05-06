@@ -22352,6 +22352,21 @@ textarea {
           animation: bounce 1s infinite;
 }
 
+main {
+  width: 83.333333%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  padding-left: 2rem;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
