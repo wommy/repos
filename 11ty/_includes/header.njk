@@ -1,7 +1,4 @@
-<header>
-	<nav>
-	{%- for key, url in { "home": "/" } %}
-		<a {% if url == page.url %}class="active"{% else %}href="{{ url }}"{% endif %}>{{ key }}</a>
-	{%- endfor %}
-	</nav>
+<header class="w-1/2 mx-auto">
+	<h1>{{ title }}</h1>
+	<p>on this simple page i am organizing my github repos</p>
 </header>

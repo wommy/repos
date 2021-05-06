@@ -1,4 +1,86 @@
 ---
 layout: _base
+title: "wommy repos"
+repos: {
+	"inbox": [
+		"jeff",
+		"funSpike",
+	],
+	"wommy": [
+		"repos",
+		"mixture-portfolio",
+		"wommy-www",
+		"rd",
+		"technomad_jekyll",
+		"technomad_blogposts",
+		"mix_11ty",
+		"technomad",
+		"wommy-technomad_11ty",
+		"dotfiles",
+		"technomad_blog",
+		"technomad_11ty",
+		"resume",
+		"danielle-cms",
+		"technomad_handlebars",
+		"technomad_olde",
+		"technomad_technomad",
+		"wommy",
+		"wommy_jekyll",
+		"2019_04",
+		"w3w",
+		"blog",
+		"wommy.github.io",
+		"w0m.io",
+		"jek2jade",
+		"jekyll-lanyon",
+		"npm_bp_c9-technomad",
+		"starter",
+	]
+,
+	"clients": [
+		"freedomtoons",
+		"annabrab",
+		"LinuxReport",
+		"cutepanda",
+		"pockets.pizza",
+		"tarpley.us",
+		"sem-js",
+		"static-pokedex",
+		"hempwoodCBD",
+		"thehousecycle",
+		"lulu_cakes",
+		"brent_portfolio",
+		"ericJS",
+		"rovin_funneler",
+		"postcss-preset-env-www",
+		"oley_revive",
+		"Roommate",
+		"jekyll-ogp",
+	],
+	"projects": [
+		"adopt_me",
+		"learnnextjs-demo",
+		"datocms-gatsby-portfolio",
+		"gatsby-source-youtube",
+		"restaurant-template-cms",
+		"test_hugo",
+		"test_forestry",
+		"hugo_test",
+		"React-For-Beginners-Starter-Files",
+		"kaldi-hugo-cms-template",
+		"kanban_app",
+		"webpack-react-test",
+		"test_app3",
+		"test_app2"
+	]}
 ---
-<h1>wommy working</h1>
+{%- for dir, arr in repos %}
+<ol>
+	<header>{{dir}}</header>
+	{%- for repo in arr %}
+	<li>
+		<a href="//github.com/wommy/{{ repo }}" target="_blank">{{ repo }}</a>
+	</li>
+	{%- endfor %}
+</ol>
+{%- endfor %}

@@ -5,3 +5,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+main {
+	@apply w-10/12 grid grid-cols-4;
+}
+
+ol {
+	@apply list-decimal list-outside pl-8 w-auto mx-auto;
+}
+
