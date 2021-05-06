@@ -74,6 +74,11 @@ repos: {
 		"test_app2"
 	]}
 ---
+<header class="w-1/2 mx-auto">
+	<h1>{{ title }}</h1>
+	<p>on this simple page i am organizing my github repos</p>
+</header>
+<div class="grid grid-cols-4">
 {%- for dir, arr in repos %}
 <ol class="list-decimal list-outside pl-8 w-auto mx-auto">
 	<header>{{dir}}</header>
@@ -84,3 +89,4 @@ repos: {
 	{%- endfor %}
 </ol>
 {%- endfor %}
+</div>
