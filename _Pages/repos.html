@@ -18,15 +18,17 @@ inbox: [
 		{%- endfor %}
 	</ol>
 </header>
-<div class="gap-4 grid grid-cols-3">
+<div class="sm:gap-4 grid sm:grid-cols-2 md:grid-cols-3">
 	{%- for dir, arr in repos %}
-	<ol>
-		<header>{{dir}}</header>
-		{%- for repo in arr %}
-		<li>
-			<a href="//github.com/wommy/{{ repo }}" target="_blank">{{ repo }}</a>
-		</li>
-		{%- endfor %}
-	</ol>
+	<details open>
+		<summary>{{dir}}</summary>
+		<ol>
+			{%- for repo in arr %}
+			<li>
+				<a href="//github.com/wommy/{{ repo }}" target="_blank">{{ repo }}</a>
+			</li>
+			{%- endfor %}
+		</ol>
+	</details>
 	{%- endfor %}
 </div>
